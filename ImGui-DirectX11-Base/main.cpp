@@ -1,27 +1,16 @@
-#include "main.h"
+#include "pch.h"
+#include "WindowManager/WindowManager.h"
+
+static WindowManager g_WndMgr;
 
 int main()
 {
-    HWND hwnd;
-    WNDCLASSEX wc;
-
-    if (!RenderSetup(hwnd, wc))
-    {
-        return 1;
-    }
-
     bool is_show = true;
     while (true)
     {
-        if (GetAsyncKeyState(VK_HOME) & 0x01)
-        {
-            is_show = !is_show;
-            ChangeClickability(is_show, hwnd);
-        }
+        if (!g_WndMgr.BeginFrame()) break;
 
-        if (!NewFrame()) break;
-
-        // ESP stuff here
+        // Draw stuff here
 
         // Menu is here
         if (is_show)
@@ -29,8 +18,6 @@ int main()
             ImGui::ShowDemoWindow();
         }
 
-        Rendering();
+        g_WndMgr.EndFrame();
     }
-
-    Cleanup(hwnd, wc);
 }

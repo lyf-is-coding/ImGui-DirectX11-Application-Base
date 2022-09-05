@@ -24,11 +24,8 @@
     <ClCompile Include="ImGui\imgui_widgets.cpp">
       <Filter>ImGui</Filter>
     </ClCompile>
-    <ClCompile Include="ImGui\utils\imgui_utils.cpp">
-      <Filter>ImGui\Utils</Filter>
-    </ClCompile>
-    <ClCompile Include="ImGui\Render\Render.cpp">
-      <Filter>ImGui\Render</Filter>
+    <ClCompile Include="WindowManager\WindowManager.cpp">
+      <Filter>WindowManager</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -57,15 +54,11 @@
     <ClInclude Include="ImGui\imstb_truetype.h">
       <Filter>ImGui</Filter>
     </ClInclude>
-    <ClInclude Include="ImGui\stb_image.h">
-      <Filter>ImGui</Filter>
+    <ClInclude Include="WindowManager\WindowManager.h">
+      <Filter>WindowManager</Filter>
     </ClInclude>
-    <ClInclude Include="ImGui\utils\imgui_utils.h">
-      <Filter>ImGui\Utils</Filter>
-    </ClInclude>
-    <ClInclude Include="main.h" />
-    <ClInclude Include="ImGui\Render\Render.h">
-      <Filter>ImGui\Render</Filter>
+    <ClInclude Include="ImGui\stb\stb_image.h">
+      <Filter>ImGui\stb</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -75,14 +68,14 @@
     <Filter Include="ImGui\Backends">
       <UniqueIdentifier>{d3b835d3-ea6f-4ce4-8b1b-25507f4b4bd6}</UniqueIdentifier>
     </Filter>
-    <Filter Include="ImGui\Utils">
-      <UniqueIdentifier>{9889a505-f313-4072-b7a4-ccc2d1ff6b11}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="ImGui\Render">
-      <UniqueIdentifier>{84ed278a-5a49-426c-aa78-d6af89dc4b37}</UniqueIdentifier>
-    </Filter>
     <Filter Include="ImGui\Overlay">
       <UniqueIdentifier>{097a8bbd-6176-4f5d-9fef-fe43a25d6d36}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="WindowManager">
+      <UniqueIdentifier>{4445ccd3-f9e0-4b49-9ba3-d3406d7f6754}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ImGui\stb">
+      <UniqueIdentifier>{14503bc8-f289-4920-8b63-1be6ae0b1869}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>
