@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="pch.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="ImGui\backends\imgui_impl_dx11.cpp">
+      <Filter>ImGui\Backends</Filter>
+    </ClCompile>
+    <ClCompile Include="ImGui\backends\imgui_impl_win32.cpp">
+      <Filter>ImGui\Backends</Filter>
+    </ClCompile>
+    <ClCompile Include="ImGui\imgui.cpp">
+      <Filter>ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="ImGui\imgui_demo.cpp">
+      <Filter>ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="ImGui\imgui_draw.cpp">
+      <Filter>ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="ImGui\imgui_tables.cpp">
+      <Filter>ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="ImGui\imgui_widgets.cpp">
+      <Filter>ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="ImGui\utils\imgui_utils.cpp">
+      <Filter>ImGui\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="ImGui\Render\Render.cpp">
+      <Filter>ImGui\Render</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="pch.h" />
+    <ClInclude Include="ImGui\backends\imgui_impl_dx11.h">
+      <Filter>ImGui\Backends</Filter>
+    </ClInclude>
+    <ClInclude Include="ImGui\backends\imgui_impl_win32.h">
+      <Filter>ImGui\Backends</Filter>
+    </ClInclude>
+    <ClInclude Include="ImGui\imconfig.h">
+      <Filter>ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="ImGui\imgui.h">
+      <Filter>ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="ImGui\imgui_internal.h">
+      <Filter>ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="ImGui\imstb_rectpack.h">
+      <Filter>ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="ImGui\imstb_textedit.h">
+      <Filter>ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="ImGui\imstb_truetype.h">
+      <Filter>ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="ImGui\stb_image.h">
+      <Filter>ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="ImGui\utils\imgui_utils.h">
+      <Filter>ImGui\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="main.h" />
+    <ClInclude Include="ImGui\Render\Render.h">
+      <Filter>ImGui\Render</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="ImGui">
+      <UniqueIdentifier>{6c34400d-6c5a-4604-8160-29325281ad51}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ImGui\Backends">
+      <UniqueIdentifier>{d3b835d3-ea6f-4ce4-8b1b-25507f4b4bd6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ImGui\Utils">
+      <UniqueIdentifier>{9889a505-f313-4072-b7a4-ccc2d1ff6b11}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ImGui\Render">
+      <UniqueIdentifier>{84ed278a-5a49-426c-aa78-d6af89dc4b37}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ImGui\Overlay">
+      <UniqueIdentifier>{097a8bbd-6176-4f5d-9fef-fe43a25d6d36}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
