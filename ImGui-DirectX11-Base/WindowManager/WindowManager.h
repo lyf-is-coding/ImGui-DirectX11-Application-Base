@@ -8,8 +8,6 @@
 #include "../ImGui/backends/imgui_impl_dx11.h"
 #include "../ImGui/stb/stb_image.h"
 
-LRESULT WINAPI WndProc(HWND hWnd, UINT msg, WPARAM wParam, LPARAM lParam);
-
 class WindowManager
 {
 private:
