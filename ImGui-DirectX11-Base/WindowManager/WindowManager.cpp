@@ -19,7 +19,7 @@ WindowManager::WindowManager()
 {
     wc = { sizeof(WNDCLASSEX), CS_CLASSDC, WndProc, 0L, 0L, GetModuleHandle(NULL), NULL, NULL, NULL, NULL, _T("ImGui DirectX11 Base"), NULL };
     ::RegisterClassEx(&wc);
-    hwnd = ::CreateWindow(L"ImGui DirectX11 Base", L"ImGui DirectX11 Base", WS_POPUP, 0, 0, 50, 50, 0, 0, wc.hInstance, 0);
+    hwnd = ::CreateWindow(L"ImGui DirectX11 Base", L"ImGui DirectX11 Base", WS_POPUP, 0, 0, 1000, 800, 0, 0, wc.hInstance, 0);
 
 #if RELEASE
     ::ShowWindow(::GetConsoleWindow(), SW_HIDE);
